@@ -45,7 +45,7 @@ header i{
 }
 .shop-contents{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
     align-items: center;
     grid-gap: 1.7rem;
 }
@@ -132,7 +132,9 @@ margin-bottom: 5px;
     cursor: pointer;
     background-color: black;
     color: white;
+    font-weight: bold;
     border-radius: 5px;
+    font-size: 15px;
 }
 #remove-cart{
     position: absolute;
