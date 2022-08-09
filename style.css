@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Josefin+Sans:wght@100;200;400&family=Outfit:wght@200;300&family=Poppins:wght@200;300;400;600&family=Square+Peg&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: 'Outfit', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    border-bottom: 2px solid whitesmoke;
+}
+header a p{
+    color: black;
+    font-size: 20px;
+    font-family: 'Fugaz One', cursive;
+   font-weight: bold;
+}
+header i{
+    font-size: 20px;
+}
+.shop-container{
+    padding: 100px 10%;
+}
+.shop-container .shop-title{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.shop-box img{
+   height: auto;
+    width: 100%;
+}
+.shop-contents{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    align-items: center;
+    grid-gap: 1.7rem;
+}
+.shop-box .shop-box-title{
+    font-size: 17px;
+}
+.shop-box .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.shop-box .flex .shop-box-price{
+    margin-top: 8px;
+}
+.shop-box .flex i{
+    background-color: black;
+    padding: 5px 5px;
+    color: white;
+    cursor: pointer;
+}
+header .cart{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background:#fff;
+    height:70rem;
+    width: 25rem;
+    border-left: 1px solid black;
+    transform: translateX(100%);
+    transition: .3s;
+    border-bottom: 1px solid black;
+}
+.cart .cart-title{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.cart .cart-contents .cart-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+.cart .cart-contents .cart-box img{
+    width: 80px;
+    height: auto;
+}
+.cart .cart-contents .cart-box .cart-box-detail-quantity{
+    width: 50px;
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 2px;
+}
+.cart .cart-contents .cart-box .trash{
+    color: red;
+    font-size: 22px;
+    cursor: pointer;
+}
+.cart-box .cart-box-details p{
+margin-bottom: 5px;
+}
+.cart-box .cart-box-details h3{
+    font-size: 17px;
+    margin-bottom: 7px;
+}
+.total{
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding: 0 10px;
+}
+.buy-btn{
+    text-align: center;
+    margin-top: 30px;
+}
+.buy-btn button{
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+#remove-cart{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+    cursor: pointer;
+}
+#add-cart{
+    cursor: pointer;
+}
+
+header .active-cart{
+    transform: translateX(0%);
+    transition: .3s;
+}
+@media screen and (max-width:600px) {
+    header .cart{
+        width: 20rem;
+    } 
+}
+@media screen and (max-width:370px) {
+    header .cart{
+        width: 15rem;
+    } 
+    .shop-container{
+        padding: 100px 5%;
+    }
+
+}
+@media screen and (max-width:250px) {
+    header .cart{
+        width: 10rem;
+    } 
+}
